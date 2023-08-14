@@ -31,7 +31,7 @@ public abstract class AdminFilter implements Filter {
         
         if (user.getRole().getRoleId() == 2) {
             HttpServletResponse httpResponse = (HttpServletResponse) response;
-            httpResponse.sendRedirect("admin");
+            httpResponse.sendRedirect("notes");
             return;          
         }     
         chain.doFilter(request, response);    
